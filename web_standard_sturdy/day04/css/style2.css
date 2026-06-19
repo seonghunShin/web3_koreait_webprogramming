@@ -1,0 +1,128 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 350px;
+  background-color: rgb(255, 251, 246);
+}
+
+@font-face {
+  font-family: 'Segusugu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.2/SeguSegu-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Segusugu', sans-serif;
+  font-size: 20px;
+  background-color: rgb(255, 251, 246);
+}
+
+#main-title {
+  font-family: 'Segusugu', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.hamburger {
+  appearance: none;
+  padding: 0;
+  background-color: rgb(255, 251, 246);
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(155, 8, 8);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkmode {
+  appearance: none;
+  padding: 0;
+  background-color: rgb(255, 251, 246);
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(155, 8, 8);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 100px;
+}
+
+.tresh-space {
+    width:200px;
+}
+
+.main-image-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  
+}
+
+.main-image-flex1 {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 100px;
+}
+
+.main-image {
+  width: 800px;
+  height: 400px;
+  margin-top: 50px;
+  border: 2px solid rgb(145, 8, 8);
+  background-color: rgb(255, 251, 246);
+}
+
+.setting-all {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 260px;
+  height: 380px;
+  background-color: rgb(255, 251, 246);
+  border: 1px solid rgb(145, 8, 8);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,22 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-item {
+  height: 100px;
+  background-color: rgb(225, 180, 255);
+}
+
+@media (max-width: 1000px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.card-item {
+  font-size: small;
+}
