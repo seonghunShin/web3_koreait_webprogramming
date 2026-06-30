@@ -102,7 +102,7 @@ function createProductCard(product) {
 
     // 아니라면 
     // p 태그인 productStatus의 text를 '품절'로 바꾸고
-    // 클래스는 highlight, sole-out 넣기(하나씩 넣으면 됨)
+    // 클래스는 highlight, sold-out 넣기(하나씩 넣으면 됨)
     else {
         productStatus.textContent = '품절';
         productStatus.classList.add('sold-out');
