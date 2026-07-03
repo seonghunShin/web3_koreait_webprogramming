@@ -82,7 +82,7 @@ function createProductCard(products) {
     // card에 title, price, deletButton 추가해주세요.
     productCard.appendChild(productTitle);
     productCard.appendChild(productPrice);
-    productCard.appendChild(deleteButton)
+    productCard.appendChild(deleteButton);
 
     // card return
     return productCard;
