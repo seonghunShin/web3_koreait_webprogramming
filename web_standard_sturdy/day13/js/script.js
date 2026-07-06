@@ -78,7 +78,7 @@ menuForm.addEventListener('submit', (event) => {
 menuList.addEventListener('click', (event) => {
     // TODO: 클릭된 게 '삭제 버튼'이면 dataset.id를 이용해 배열에서 제거합니다.
     if (event.target.classList.contains('delete-btn')) {
-        const targetId = Number(liElement.dataset.id);
+        const targetId = Number(event.target.closest('.menu-item').dataset.id);
         randomData = randomData.filter(menu => menu.id !== targetId);
         localStorage.setItem('randomMenu', JSON.stringify(randomData));
         renderMenu(randomData);
