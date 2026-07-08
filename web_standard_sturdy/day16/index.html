@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배리어 프리 카페 키오스크</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h1 class="logo">CAFE</h1>
+            <nav class="category-nav">
+                <button id="coffe-category" class="category-btn active" data-category="coffee">커피 (Coffee)</button>
+                <button id="beverage-category" class="category-btn" data-category="beverage">음료 (Beverage)</button>
+                <button id="dessert-category" class="category-btn" data-category="dessert">디저트 (Dessert)</button>
+            </nav>
+            <nav class="shopping-cart">
+                <button id="shopping-category" class="shopping-btn" data-category="cart">장바구니 (Shopping Cart)</button>
+            </nav>
+        </aside>
+        
+        <div class="main-wrapper">
+            <header class="top-header">
+                <h2>스타벅스 키오스크</h2>
+            </header>
+            
+            <main class="menu-board">
+                <div class="menu-grid" id="menu-grid">
+                </div>
+            </main>
+
+            <template id="menu-card-template">
+                <article class="menu-card">
+                    <div class="menu-img-wrapper">
+                        <img src="" alt="" class="menu-img">
+                        <div class="sold-out-badge">품절</div>
+                    </div>
+                    <h3 class="menu-name">메뉴이름</h3>
+                    <p class="menu-price">가격</p>
+                </article>
+            </template>
+            
+            <footer class="bottom-controls">
+                <button class="mode-btn" id="btn-silver">👨‍🦳 노약자 모드</button>
+                <button class="mode-btn" id="btn-wheelchair">🧑‍🦽 휠체어 모드</button>
+                <button class="mode-btn" id="btn-lowvision">👁️ 저시력자 모드</button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
