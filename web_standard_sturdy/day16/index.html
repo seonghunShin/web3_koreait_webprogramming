@@ -10,13 +10,25 @@
     <div class="app-container">
         <aside class="sidebar">
             <h1 class="logo">CAFE</h1>
+            
             <nav class="category-nav">
                 <button id="coffe-category" class="category-btn active" data-category="coffee">커피 (Coffee)</button>
-                <button id="beverage-category" class="category-btn" data-category="beverage">음료 (Beverage)</button>
+                <button id="tea-category" class="category-btn" data-category="tea">차 (Tea)</button>
+                <button id="milk-tea-category" class="category-btn" data-category="milk_tea">밀크티 (Milk Tea)</button>
+                <button id="non-coffee-category" class="category-btn" data-category="non_coffee">논커피 (non coffee)</button>
+                <button id="ade-category" class="category-btn" data-category="ade">에이드 (Ade)</button>
+                <button id="juice-category" class="category-btn" data-category="juice">음료 (Juice)</button>
+                <button id="smoothie-category" class="category-btn" data-category="smoothie">스무디 (smoothie)</button>
+                <button id="cake-category" class="category-btn" data-category="cake">케이크 (Cake)</button>
                 <button id="dessert-category" class="category-btn" data-category="dessert">디저트 (Dessert)</button>
+                <button id="bakery-category" class="category-btn" data-category="bakery">베이커리 (Bakery)</button>
+                <button id="sandwich-category" class="category-btn" data-category="sandwich">샌드위치 (Sandwich)</button>
+                <button id="brunch-category" class="category-btn" data-category="brunch">브런치 (Brunch)</button>
+                <button id="icecream-category" class="category-btn" data-category="ice_cream">아이스크림 (Ice Cream)</button>
             </nav>
+            
             <nav class="shopping-cart">
-                <button id="shopping-category" class="shopping-btn" data-category="cart">장바구니 (Shopping Cart)</button>
+                <button id="shopping-category" class="shopping-btn" data-category="cart">🛒 장바구니 (Cart)</button>
             </nav>
         </aside>
         
@@ -27,7 +39,7 @@
             
             <main class="menu-board">
                 <div class="menu-grid" id="menu-grid">
-                </div>
+                    </div>
             </main>
 
             <template id="menu-card-template">
@@ -41,6 +53,22 @@
                 </article>
             </template>
             
+            <template id="cart-card-template">
+                <article class="menu-card">
+                    <div class="menu-img-wrapper" style="height: 100px;">
+                        <img src="" alt="" class="menu-img">
+                    </div>
+                    <h3 class="menu-name" style="font-size: 18px;">메뉴이름</h3>
+                    <p class="menu-price" style="margin-bottom: 15px;">가격</p>
+                    
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <button class="qty-btn minus" style="padding: 5px 15px; font-size: 18px; cursor: pointer;">-</button>
+                        <span class="qty-text" style="font-size: 18px; font-weight: bold;">0개</span>
+                        <button class="qty-btn plus" style="padding: 5px 15px; font-size: 18px; cursor: pointer;">+</button>
+                    </div>
+                </article>
+            </template>
+            
             <footer class="bottom-controls">
                 <button class="mode-btn" id="btn-silver">👨‍🦳 노약자 모드</button>
                 <button class="mode-btn" id="btn-wheelchair">🧑‍🦽 휠체어 모드</button>
@@ -48,6 +76,7 @@
             </footer>
         </div>
     </div>
+    
     <script src="js/script.js" defer></script>
 </body>
 </html>

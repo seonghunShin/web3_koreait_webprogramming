@@ -29,6 +29,9 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
 }
 
 .logo {
@@ -44,6 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 100px;
 }
 
 .shopping-cart {
